@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: "Open Sans", "sans serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 1em;
+  font-size: 3em;
+}
+
+.box {
+  background-color: #0078aa;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px #ffc300;
+  transform: translateX(400%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0078aa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4c6875;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 80%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.7em;
+  }
+}
