@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(circle, #7858A6, #270557);
+  font-family: "PT Sans", "sans serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+.container{
+    color: #fff;
+    padding: 20px 40px;
+    box-shadow: #270557 0px 22px 70px 4px;
+    border-radius: 15px;
+}
+
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: #100F0F;
+}
+
+.form-control{
+  position: relative;
+  margin: 30px 0;
+}
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.form-control input:focus, .form-control input:valid{
+    outline:0;
+    background-color: transparent;
+}
+
+
+.form-control input:-webkit-autofill,
+.form-control input:-webkit-autofill:hover, 
+.form-control input:-webkit-autofill:focus, 
+.form-control input:-webkit-autofill:active{
+  -webkit-text-fill-color: #fff;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    background-color: #fff;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 1.5em;
+    border:0;
+    border-radius: 7px;
+    margin-top: 30px;
+    color: #7858A6;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    box-shadow: #a19ba8 0px 5px 15px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active{
+  transform: scale(0.8);
+}
+
+.form-control label{
+  position: absolute;
+  top: 10px;
+  left:0;
+}
+
+.form-control label span{
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.5);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+  transform: translateY(-30px);
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(218, 208, 208);
+}
+
+@media only screen and (max-width: 600px) {
+}
